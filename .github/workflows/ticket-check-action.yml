@@ -14,4 +14,9 @@ jobs:
         uses: neofinancial/ticket-check-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          bodyRegex: '#(?<ticketNumber>\d+)'
+          ticketLink: 'https://mack.atlassian.net/browse/AB-%ticketNumber%'
+          ticketPrefix: 'AB-'
+          titleRegex: '^AB-(?<ticketNumber>\d+)'
+          branchRegex: '^AB-(?<ticketNumber>\d+)'
+          bodyRegex: 'AB-(?<ticketNumber>\d+)'
+          bodyURLRegex: 'http(s?):\/\/(mack.atlassian.net)(\/browse)\/(AB\-)(?<ticketNumber>\d+)'
