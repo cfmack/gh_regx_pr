@@ -16,5 +16,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           quiet: false
           titleRegex: '([A-Z]{2}-[0-9]{3,})'
+          ticketPrefix: 'UK-'
           branchRegex: 'zzz'
           bodyRegex: '([A-Z]{2}-[0-9]{3,})'
