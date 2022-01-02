@@ -15,9 +15,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           quiet: false
-          ticketLink: 'https://mack.atlassian.net/browse/AB-%ticketNumber%'
-          ticketPrefix: 'AB-'
-          titleRegex: '^AB-(?<ticketNumber>\d+)'
-          branchRegex: '^AB-(?<ticketNumber>\d+)'
-          bodyRegex: 'AB-(?<ticketNumber>\d+)'
-          bodyURLRegex: 'http(s?):\/\/(mack.atlassian.net)(\/browse)\/(AB\-)(?<ticketNumber>\d+)'
+          titleRegex: '*'
+          branchRegex: '*'
+          bodyRegex: '([A-Z]{2}-[0-9]{3,})'
