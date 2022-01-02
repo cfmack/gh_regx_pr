@@ -10,5 +10,6 @@ jobs:
     steps:
       - name: Lint commits, branches, and pull requests
         uses: aschbacd/gitlint-action@v1.0.2
-        with:
-          re-commit-message-body: [A-Za-z-]{2}-[0-9]{3,}
+        with: re-commit-message-body: [A-Za-z-]*
+
+
