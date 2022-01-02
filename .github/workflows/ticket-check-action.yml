@@ -14,6 +14,7 @@ jobs:
         uses: neofinancial/ticket-check-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          quiet: false
           ticketLink: 'https://mack.atlassian.net/browse/AB-%ticketNumber%'
           ticketPrefix: 'AB-'
           titleRegex: '^AB-(?<ticketNumber>\d+)'
