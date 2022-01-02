@@ -1,2 +1,2 @@
-# gh_regx_pr
+# Github RegEx Pull Request
 Experiment running regexs on github pull requests via actions
