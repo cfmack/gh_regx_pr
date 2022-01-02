@@ -15,6 +15,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           quiet: false
-          titleRegex: 'zzz'
+          titleRegex: '([A-Z]{2}-[0-9]{3,})'
           branchRegex: 'zzz'
           bodyRegex: '([A-Z]{2}-[0-9]{3,})'
